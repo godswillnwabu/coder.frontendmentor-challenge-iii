@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    background: hsl(229, 57%, 11%);
+    background-image: url("./images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position-y: bottom;
+}
+main {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.sectA {
+    height: 135px;
+    width: 230px;
+    background: hsl(228, 56%, 26%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 25px;
+}
+.logo {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 8px;
+}
+.holder {
+    padding: 10px;
+    background: hsl(229, 57%, 11%);
+    border-radius: 8px;
+    margin-right: 8px;
+}
+.sectB {
+    height: 100px;
+    width: 360px;
+    background: hsl(228, 56%, 26%);
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 35px;
+    border-radius: 10px;
+    padding: 25px;
+    z-index: -1;
+}
+.positioned {
+    width: 122px;
+    height: 50px;
+    display: block;
+    background: #eee;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 180px;
+    margin-top: -85px;
+    text-align: center;
+}
+#number {
+    font-size: 32px;
+}
+.data {
+    color: grey;
+    font-size: 9px;
+}
+.container {
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    transform: rotateX(222deg);
+    margin-left: 251px;
+    margin-top: -35px;
+}
+.bar {
+    max-width: 300px;
+    height: 15px;
+    position: relative;
+    background: hsl(229, 57%, 11%);
+    border-radius: 15px;
+}
+.progress {
+    position: relative;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 230px;
+    height: 11px;
+    border-radius: inherit;
+    margin-top: -16px;
+    margin-left: 2px;
+}
+.point {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: #eee;
+    border-radius: 50%;
+    margin-left: 219px;
+    margin-top: 1.5px;
+}
+.static {
+    color: #eee;
+    font-size: 12px;
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    padding-bottom: 10px;
+}
+.left {
+    margin-top: 5px;
+    color: #eee;
+    font-size: 8px;
+    font-family: inherit;
+}
+.right {
+    float: right;
+    margin-top: -9px;
+    margin-right: 12px;
+    color: #eee;
+    font-size: 8px;
+    font-family: inherit;
+}
+.attribution { 
+    font-size: 14px; 
+    text-align: center;
+    margin-top: 50px; 
+}
+.attribution a { color: hsl(228, 33%, 97%); }
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+    body {
+        background: url(./images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .sectA {
+        height: 170px;
+        width: 300px;
+        background: linear-gradient(to right,hsl(100, 50%, 50%), hsl(228, 56%, 26%));
+        padding: 30px;
+    }
+    .logo {
+        width: 110px;
+        height: 45px;
+        margin-bottom: 5px;
+    }
+    .sectB {
+        height: 150px;
+        width: 300px;
+        padding: 36px;
+    }
+    .container {
+        display: none;
+    }
+    .positioned {
+        width: 165px;
+        height: 65px;
+        margin-top: 60px;
+        margin-left: 30px;
+        padding: 10px;
+    }
+    #number {
+        font-size: 40px;
+    }
+    .data {
+        font-size: 15px;
+    }
+    .bar {
+        width: 230px;
+    }
+    .progress {
+        width: 185px;
+    }
+    .left, .right {
+        font-size: 10px;
+    }
+    .point {
+        margin-left: 175px;
+    }
+    .section {
+        margin: 8px;
+    }
+    .static {
+        text-align: center;
+        font-size: 13px;
+    }
+    img {
+        padding-top: 10px;
+        width: 20px;
+        height: 23px;
+    }
+}
