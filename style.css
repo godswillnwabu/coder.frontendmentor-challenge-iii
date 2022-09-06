@@ -75,7 +75,7 @@ body {
     background: #fff;
     border-radius: 10px;
     position: absolute;
-    left: 66.5%;
+    left: 60%;
     top: 33%;
 }
 .positioned::after {
